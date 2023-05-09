@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+
+</head>
+
+<body>
+    <form id="login-form" class="hidden">
+        <input 
+        required maxlength ="15"
+        type="text" 
+        placeholder="what is your name" 
+        />
+        <input type="submit" value="Log In"/>
+    </form> 
+    <!-- //자동으로 서밋되게 만드는 법, 폼 안에 둔 것은 서밋시킬때 마다, 자동으로 새로고침하게 하기 위해서이다.
+    //하지만 이 방법은 목표에 적절하지 않은 방법이란다. 브라우저는 서밋을 할 때 새로고침을 하게 기본으로 되어 있는데, 이를 막을 것이다.-->
+
+    <h2 id="clock">00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required>
+    </form>
+    <ul id="todo-list">
+    </ul>
+    
+    <div id="quote">
+        <span></span> <!--명언-->
+        <span></span> <!--작가-->
+    </div>
+    
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+
+
+</body>
+
+</html>
